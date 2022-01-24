@@ -310,12 +310,7 @@ const Note = ({ navigation }) => {
           amet.
         </Text>
         <View style={{ height: 220, marginBottom: 10 }}>
-          <NoteImg
-            width="100%"
-            height="100%"
-            viewBox={`0 0 ${originalWidth} ${originalHeight}`}
-            style={{ marginTop: 10 }}
-          />
+          <NoteImg width="100%" height="100%" style={{ marginTop: 10 }} />
         </View>
 
         {/* <NoteImgs/> */}
