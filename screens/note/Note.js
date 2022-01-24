@@ -47,9 +47,6 @@ const Note = ({ navigation }) => {
   const richText = React.useRef();
   const back = () => navigation.goBack();
 
-  const originalWidth = 341;
-  const originalHeight = 200;
-  const aspectRatio = originalWidth / originalHeight;
   const [visible, setVisible] = useState(false);
   const closeJotter = () => setVisible(false);
 
@@ -194,8 +191,6 @@ const Note = ({ navigation }) => {
               </Text>
             </TouchableOpacity>
           </View>
-
-          {/* <Button title="Done" onPress={closeJotter} /> */}
         </Popup>
       </TouchableWithoutFeedback>
 
@@ -207,12 +202,9 @@ const Note = ({ navigation }) => {
         <Card>
           <View
             style={{
-              // flex: 1,
               flexDirection: "row",
               justifyContent: "space-between",
-              // alignItems: "center",
               width: "100%",
-              // paddingTop: 14,
               paddingVertical: 14,
               paddingLeft: 5,
               paddingRight: 14,
